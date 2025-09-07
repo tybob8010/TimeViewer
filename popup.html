@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 280px;
+      font-family: sans-serif;
+      padding: 15px;
+      background-color: #ffffff;
+    }
+    h1 {
+      text-align: center;
+      color: #0ca3c5;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    h3 {
+      text-align: center;
+      color: #333;
+    }
+    .control-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="range"] {
+      width: 100%;
+    }
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+    #description {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #29292920;
+      border-radius: 5px;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+    .radio-group {
+      display: flex;
+      gap: 15px;
+    }
+    .label-with-value {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    #footer{
+      text-align: center;
+    }
+    .images{
+      width: 100px;
+      height: 100px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <h1>TimeViewer <img class="images"src="images/icon.png"></h1>
+  <h3>概要</h3>
+  <div id="description">
+    <p>ブラウザ上の右下に現在日時を表示する拡張機能です。</p>
+    <p>日時表示部分をクリックすると、設定した透明度に切り替わります。もう一度クリックすると元の透明度に戻ります。</p>
+    <div id="footer">
+      <p>v1.0.0　　　© 2025 <a href="https://tybob8010.github.io" target="_blank">tybob</a></p>
+    </div>
+  </div>
+  <h3>設定</h3>
+  <div id="description">
+  <div class="control-group">
+    <label for="display-toggle">日時を表示する</label>
+    <input type="checkbox" id="display-toggle">
+  </div>
+
+  <div class="control-group">
+    <div class="label-with-value">
+      <label for="opacity-slider">透明度を調整</label>
+      <span id="opacity-value"></span>
+    </div>
+    <input type="range" id="opacity-slider" min="0" max="100" value="80">
+  </div>
+
+  <div class="control-group">
+    <div class="label-with-value">
+      <label for="click-opacity-slider">クリック時の透明度</label>
+      <span id="click-opacity-value"></span>
+    </div>
+    <input type="range" id="click-opacity-slider" min="0" max="100" value="5">
+  </div>
+
+  <div class="control-group">
+    <label for="milliseconds-toggle">ミリ秒を表示する</label>
+    <input type="checkbox" id="milliseconds-toggle">
+  </div>
+
+  <div class="control-group">
+    <label>表示形式</label>
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="display-mode" value="24" id="mode-24"> 24時間
+      </label>
+      <label>
+        <input type="radio" name="display-mode" value="12" id="mode-12"> 12時間
+      </label>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label>テーマ</label>
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="theme-mode" value="pattern1" id="theme-pattern1"> 黒
+      </label>
+      <label>
+        <input type="radio" name="theme-mode" value="pattern2" id="theme-pattern2"> 白
+      </label>
+    </div>
+  </div>
+
+  <ul>
+    <li><u>日時を表示する</u>：表示・非表示を変更できます。</li>
+    <li><u>透明度を調整</u>：表示時の透明度(0%～100%)を設定できます。</li>
+    <li><u>クリック時の透明度</u>：クリックした際の透明度(0%～100%)を設定できます。</li>
+    <li><u>ミリ秒を表示する</u>：時刻の形式をHH:MM:SS.sssかHH:MM:SSに設定できます。</li>
+    <li><u>表示形式</u>：24時間表示か12時間表示かを設定できます。12時間表示の場合AM、PMも表示されます。
+    </li>
+    <li><u>テーマ</u>：黒い背景に白い数字か、白い背景に黒い数字に設定できます。</li>
+  </ul>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
