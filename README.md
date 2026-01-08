@@ -1,11 +1,12 @@
 # TimeViewer(TV) タイムビューワー ![](/images/icon_36px.png)
+
 ブラウザ上の右下に現在日時を表示する拡張機能です。
 
----
+>Latest Version : **v.1.0.1**
+
+>[License](https://github.com/tybob8010/TimeViewer/blob/main/LICENSE)
 
 ## 使い方
-
----
 
 ## インストール方法
 1.このページの右側にある「Releases」から「Latest」となっているものをクリックしてください。
