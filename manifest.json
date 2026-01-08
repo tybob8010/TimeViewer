@@ -6,11 +6,11 @@
   "permissions": ["activeTab", "storage"],
   "action": {
     "default_popup": "popup.html",
-    "default_icon": "images/icon.png",
+    "default_icon": "img/icon.png",
     "default_title": "TimeViewer"
   },
   "icons": {
-    "641": "images/icon.png"
+    "641": "img/icon.png"
   },
   "content_scripts": [
     {

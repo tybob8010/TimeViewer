@@ -1,4 +1,4 @@
-# TimeViewer(TV) タイムビューワー ![](/images/icon_36px.png)
+# TimeViewer(TV) タイムビューワー ![](/img/icon_36px.png)
 
 ブラウザ上の右下に現在日時を表示する拡張機能です。
 
@@ -11,18 +11,18 @@
 ## インストール方法
 1.このページの右側にある「Releases」から「Latest」となっているものをクリックしてください。
 
-![](/images/discription1.png)
+![](/img/discription1.png)
 
 2.「Assets」の「Source code(zip)」をクリックしてください。zipファイルがダウンロードされます。
 
-![](/images/discription2.png)
+![](/img/discription2.png)
 
 3.zipファイルを解凍してください。
 
 4.拡張機能を入れたいブラウザの設定を開き、「拡張機能の管理」タブ等を開いてください。
 
 5.管理タブ上部にある「デベロッパーモード」をONに設定し、「パッケージ化されていない拡張機能を読み込む」をクリックしてください。
-![](/images/discription3.png)
+![](/img/discription3.png)
 
 6.解凍したファイルを選択し、**さらにその中に入っている同名のファイルを選択したうえで**「フォルダーの選択」を押してください。
 
